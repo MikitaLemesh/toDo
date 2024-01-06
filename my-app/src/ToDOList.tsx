@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import tasks from "./constants";
 
 function ToDoList() {
+    const [tasksList, setTasksList] = useState(tasks);
     return (
       <div>
         <h3>What to do</h3>
@@ -9,9 +11,7 @@ function ToDoList() {
           <button>+</button>
         </div>
         <ul>
-          <li><input type='checkbox' checked={true}/><span>CSS&HTML</span></li>
-          <li><input type='checkbox' checked={true}/><span>JS</span></li>
-          <li><input type='checkbox' checked={false}/><span>React</span></li>
+          {tasksList.map((item) => <li><input type='checkbox' checked={item.isDone}/><span>{item.task}</span></li>)}
         </ul>
         <div>
             <button>All</button>
