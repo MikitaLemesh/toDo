@@ -1,12 +1,17 @@
 import React from 'react';
-import ToDoList from './ToDOList';
+import tasks from './constants';
+
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <ToDoList />
-    </div>
+    <>
+      <h1>To Do List</h1>
+      <form action="">
+        <input type="text" />
+        <button>add</button>
+      </form>
+    </>
   );
 }
 

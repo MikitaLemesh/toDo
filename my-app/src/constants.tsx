@@ -1,4 +1,4 @@
-const tasks = [
+const tasks: Array<Tasks> = [
     {
       id: 1,
       task: "HTML&CSS",
@@ -15,5 +15,11 @@ const tasks = [
       isDone: true
     },  
 ]
+
+type Tasks = {
+  id: number,
+  task: string,
+  isDone: boolean
+}
 
 export default tasks;
