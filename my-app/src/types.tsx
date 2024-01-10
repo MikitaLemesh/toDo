@@ -5,5 +5,6 @@ export type Tasks = {
 }
 
 export type PropsTypes = {
-  tasks: Array<Tasks>
+  tasks: Array<Tasks>,
+  removeTask: (id: number) => void,
 }
