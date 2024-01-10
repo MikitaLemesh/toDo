@@ -11,6 +11,11 @@ function App() {
         <input type="text" />
         <button>add</button>
       </form>
+      { tasks.map((item) => <li key={item.id}>
+        <input type='checkbox' checked={item.isDone}/>
+        <span>{item.task}</span>
+        <button>x</button>
+      </li>) }
     </>
   );
 }

@@ -2,7 +2,7 @@ const tasks: Array<Tasks> = [
     {
       id: 1,
       task: "HTML&CSS",
-      isDone: true
+      isDone: false
     },
     {
       id: 2,
