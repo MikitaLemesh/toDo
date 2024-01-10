@@ -1,10 +1,11 @@
-export type Tasks = {
+export type Task = {
   id: number,
   task: string,
   isDone: boolean
 }
 
 export type PropsTypes = {
-  tasks: Array<Tasks>,
+  tasks: Array<Task>,
   removeTask: (id: number) => void,
+  addTask: (newTaskValue: string) => void,
 }

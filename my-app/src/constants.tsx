@@ -1,6 +1,6 @@
-import { Tasks } from "./types";
+import { Task } from "./types";
 
-const tasks: Array<Tasks> = [
+const tasks: Array<Task> = [
     {
       id: 1,
       task: "HTML&CSS",
