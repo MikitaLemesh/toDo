@@ -1,3 +1,5 @@
+import { Tasks } from "./types";
+
 const tasks: Array<Tasks> = [
     {
       id: 1,
@@ -15,11 +17,5 @@ const tasks: Array<Tasks> = [
       isDone: true
     },  
 ]
-
-type Tasks = {
-  id: number,
-  task: string,
-  isDone: boolean
-}
 
 export default tasks;
